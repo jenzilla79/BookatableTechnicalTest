@@ -1,0 +1,17 @@
+<suite name="Jenella - Bookatable test" verbose="10">
+  <parameter name="selenium.host" value="localhost" />
+  <parameter name="selenium.port" value="3737" />
+  <parameter name="selenium.browser" value="chrome" />
+  <parameter name="selenium.url" value="https://erb.bookatable.com" />
+ 
+  <test name="Login and select menu" preserve-order="true">
+    <classes>
+      <class name="bookatable">
+        <methods>
+          <include name="verifyLogin" />
+          <include name="selectMenu" />
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>
